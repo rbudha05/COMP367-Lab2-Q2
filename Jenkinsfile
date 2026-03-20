@@ -10,11 +10,6 @@ pipeline {
     }
 
     stages {
-        stage('Check out') {
-            steps {
-                git branch: 'main', url: 'https://github.com/rbudha05/COMP367-Lab2-Q2.git'
-            }
-        }
 
         stage('Build maven project') {
             steps {
